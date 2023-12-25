@@ -1,0 +1,94 @@
+.nav-links li::after,li:nth-child(4)::after{
+    content: "";
+    display: block;
+    transform: scaleX(0);
+    height: 0.125em;
+    background-color: var(--btnbg);
+    transition: all 0.3s linear;
+}
+
+.nav-links li:hover::after,li:nth-child(4)::after{
+    transform: scaleX(1);
+}
+
+.main-contents{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5em;    
+}
+
+.left{
+    width: 60vw;
+}
+.left-img,.paras{
+    width: 50vw;
+}
+
+.tx-heading{
+    margin-top: 2em;
+}
+
+.tx-heading h1{
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+.paras{
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 0.9em;
+}
+
+.right{
+    margin-right: 5em;
+}
+
+.right table tr{
+    padding: 0.5em;
+}
+
+.right table thead th{
+    margin: auto;
+    background-color: orangered;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 0.3em;
+}
+
+tr{
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+form{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    width: fit-content;
+    margin-left: 5em;
+    border-radius: 0.4em;
+    padding: 2em;
+    margin-bottom: 5em;
+}
+
+form input, form textarea{
+    background-color: rgba(0, 0, 0, 0.103);
+    outline: none;
+    border: none;
+    resize: none;
+    width: 50vw;
+    padding: 0.9em;
+    margin-top: 2em;
+    border-radius: 0.2em;
+}
+
+form h1{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.918);
+}
+
+
+

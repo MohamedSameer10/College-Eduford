@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --primary:white;
+    --primarylight: rgb(245, 225, 188);
+    --btnbg: rgb(255, 81, 0);
+}
+
+::selection{
+    background-color: black;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header{
+    min-height: 60vh;
+    min-width: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 12, 0.6)),url(./eduford_img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+img{
+    width: 100%;
+}
+
+.top-contents,.nav-links,.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links{    
+    width:30vw;
+    margin-right: 3em;
+}
+
+.header-contents .top-contents .logo{
+    width: 12vw;
+    height: 13vh;
+    margin-left: 3em;
+}
+
+.nav-links li a{
+    color: var(--primary);
+    font-size: 0.8em;
+}   
+    
+.nav-links li::after,li:nth-child(2)::after{
+    content: "";
+    display: block;
+    transform: scaleX(0);
+    height: 0.125em;
+    background-color: var(--btnbg);
+    transition: all 0.3s linear;
+}
+
+.nav-links li:hover::after,li:nth-child(2)::after{
+    transform: scaleX(1);
+}
+
+header .tx{
+    text-align: center;
+    width: 98vw;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .tx h1{
+    color: white;
+    letter-spacing: 0.2em;
+    word-spacing: 0.2em;
+    font-weight: 600;
+}
+
+.button button{
+    margin-top: 2.5em;
+    min-width: 15vw;
+    min-height: 7vh;
+    background: transparent;
+    font-weight: 400;
+    border: 1px solid black;
+    color: orangered;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    transition: all 0.4s linear;
+}
+
+.button button::before,.button button::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -1%;
+    transform: translate(-50%,-50%);
+    width: 1.5em;
+    height: 0.13em;
+    background-color: black;
+}
+
+.button button::after{
+    left: 101%;
+}
+
+.button button:hover{
+    background-color: var(--btnbg);
+    border: 2px solid var(--btnbg);
+    color: white;
+}
+
+.button button:hover::after,.button button:hover::before{
+    z-index: -1;
+}
+
+
+.main-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.main-contents{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.img,.text-con p{
+    width: 40vw;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+
+footer,.footer-contents .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contents p,.msg{
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 1em;
+    color: rgba(0, 0, 0, 0.499);
+
+}
+
+.footer-contents .heading  h2{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.footer-contents .para{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.footer-contents p{
+    width: 75vw;
+}
+
+.footer-contents .icons{
+    color: rgb(255, 102, 0);
+    gap: 2em;
+    font-size: 0.9em;
+}
+
+.msg{
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+
+
+
